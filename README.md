@@ -57,3 +57,5 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+https://developers.google.com/identity/protocols/oauth2/web-server?utm_source=chatgpt.com&hl=es-419#node.js
