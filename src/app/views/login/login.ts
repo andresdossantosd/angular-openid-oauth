@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Auth } from '../../services/auth/auth';
+import { AuthGoogleService } from '../../services/google/oauth/auth-google.service';
 
 @Component({
   selector: 'app-login',
@@ -8,10 +8,12 @@ import { Auth } from '../../services/auth/auth';
   styleUrl: './login.scss',
 })
 export class Login {
-  private readonly _auth = inject(Auth)
+  
+  private readonly _authService = inject(AuthGoogleService);
 
-  sso(){
-    console.log('SSO');
+  oauth(){
+    console.log('Sign in with Google !');
+    this._authService.login();
   }
   
 }
